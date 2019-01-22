@@ -35,14 +35,14 @@ def sentiment_analysis_subjectivity(text):
 def subplot(lst1, lst2):
     data1 = go.Bar(
         x = list(range(200)),
-        y = lst1
-        # name = 'Polarity'
+        y = lst1,
+        name = 'Polarity'
     )
 
     data2 = go.Bar(
         x = list(range(200)),
-        y = lst2
-        # name = 'Subjectivity'
+        y = lst2,
+        name = 'Subjectivity'
     )
 
     fig = tools.make_subplots(rows=2, cols=1)
