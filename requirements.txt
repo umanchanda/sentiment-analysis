@@ -4,3 +4,4 @@ plotly
 tweepy
 translate
 gunicorn
+TextBlob
