@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block subtext %}
+@{{ screen_name }}
+{% endblock %}
+
+{% block body %}
+<h1>Polarity and Subjectivity of the last 200 tweets</h1>
+{{ bar | safe }}
+{% endblock %}
