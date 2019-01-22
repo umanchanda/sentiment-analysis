@@ -2,3 +2,5 @@ Flask
 nltk
 plotly
 tweepy
+translate
+gunicorn
