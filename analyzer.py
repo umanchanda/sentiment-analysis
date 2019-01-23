@@ -32,16 +32,18 @@ def sentiment_analysis_subjectivity(text):
     analysis = TextBlob(text)
     return analysis.sentiment.subjectivity
 
-def subplot(lst1, lst2):
+def subplot(lst1, lst2, screen_name):
     data1 = go.Bar(
         x = list(range(200)),
         y = lst1,
+        text = get_tweets(screen_name),
         name = 'Polarity'
     )
 
     data2 = go.Bar(
         x = list(range(200)),
         y = lst2,
+        text = get_tweets(screen_name),
         name = 'Subjectivity'
     )
 

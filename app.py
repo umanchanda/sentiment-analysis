@@ -21,6 +21,6 @@ def search():
         polarities.append(analyzer.sentiment_analysis_polarity(tweet))
         subjectivities.append(analyzer.sentiment_analysis_subjectivity(tweet))
     
-    bar = analyzer.subplot(polarities, subjectivities)
+    bar = analyzer.subplot(polarities, subjectivities, screen_name)
 
     return render_template("search.html", bar=bar, screen_name=screen_name)
